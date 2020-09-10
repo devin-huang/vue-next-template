@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext .js --ext .vue src/",
     "lint:fix": "eslint --fix --ext .js --ext .jsx --ext .vue src/"
   },
