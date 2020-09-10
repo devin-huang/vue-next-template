@@ -7,11 +7,9 @@
     "lint": "eslint --ext .js --ext .vue src/",
     "lint:fix": "eslint --fix --ext .js --ext .jsx --ext .vue src/"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint --bailOnLintError true"
-    }
-  },
+  "pre-commit": [
+    "lint"
+  ],
   "dependencies": {
     "vue": "^3.0.0-rc.1"
   },
