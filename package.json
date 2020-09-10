@@ -8,24 +8,8 @@
     "lint:fix": "eslint --fix --ext .js --ext .jsx --ext .vue src/"
   },
   "precommit": {
-    "run": "lint"
+    "run": "npm run lint"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "tag": "beta",
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/devin-huang/vue-next-template.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/devin-huang/vue-next-template/issues"
-  },
-  "homepage": "https://github.com/devin-huang/vue-next-template#readme",
   "dependencies": {
     "vue": "^3.0.0-rc.1"
   },
