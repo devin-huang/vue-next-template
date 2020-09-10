@@ -2,7 +2,10 @@
   <div>
     <h1>{{ msg }}</h1>
     <button @click="add">count is: {{ count }}</button>
-    <p>Edit <code>components/HelloWorld.vue</code> to test hot module replacement.</p>
+    <p>
+      Edit
+      <code>components/HelloWorld.vue</code> to test hot module replacement.
+    </p>
   </div>
 </template>
 
@@ -14,7 +17,7 @@ export default defineComponent({
     msg: String,
   },
   setup(props, vue) {
-    const aa = 123
+    const aa = 'aaaa'
     console.log(props, vue)
     const count = ref(0)
     const add = () => {
