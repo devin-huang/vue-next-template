@@ -15,6 +15,7 @@ export default defineComponent({
   },
   setup(props, vue) {
     const aa = 123
+    aa = 456
     console.log(props, vue)
     const count = ref(0)
     const add = () => {
