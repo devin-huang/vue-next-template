@@ -17,7 +17,7 @@ export default defineComponent({
     msg: String,
   },
   setup(props, vue) {
-    const aa = 'aaaa'
+    const aa = 'aaaa123123'
     console.log(props, vue)
     const count = ref(0)
     const add = () => {
