@@ -7,7 +7,7 @@
     "lint": "eslint --ext .js --ext .vue src/",
     "lint:fix": "eslint --fix --ext .js --ext .jsx --ext .vue src/"
   },
-  "pre-commit": {
+  "precommit": {
     "run": "lint"
   },
   "dependencies": {
