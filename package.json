@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint --ext .js --ext .vue src/",
+    "lint": "eslint --ext .js --ext .vue src/ --bailOnLintError true",
     "lint:fix": "eslint --fix --ext .js --ext .jsx --ext .vue src/",
     "precommit": "npm run lint"
   },
