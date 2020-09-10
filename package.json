@@ -10,6 +10,11 @@
   "precommit": {
     "run": "lint"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "beta",
+    "access": "public"
+  },
   "dependencies": {
     "vue": "^3.0.0-rc.1"
   },
