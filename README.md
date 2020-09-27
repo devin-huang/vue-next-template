@@ -13,3 +13,7 @@
 > 4. editorConfig 配置编辑器中展示格式
 
 > 5. `src/shims-vue.d.ts` 声明支持 vue 文件并在 `index.html` 中直接引入 `main.ts`(Vite DEV 环境默认支持直接引入 TS 文件)
+
+> 6. vue-router4.0 使用与 3.0 版本几乎一致使用方式，仅仅引用方式有所改变，可参考模板
+
+> 7. vuex4.0 `state 、 getter 、 mutation 、 actions 、 modules` 使用与 vuex3 几乎一致使用方式与 API, 但是`modules` 测翻天覆地的变化， 可参考模板
