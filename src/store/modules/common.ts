@@ -23,7 +23,12 @@ export default {
         console.error(error)
       }
     },
-    async updateCount({ commit }: { commit: any }, params: number) {
+    async updateCount(
+      { commit, dispatch }: { commit: any; dispatch: any },
+      params: number,
+    ) {
+      // dispatch调用其他模块的属性、方法（目前无法实现）
+      // 业务数据不应该放入Vuex增加复杂性，只存全局数据在vuex中，所以modules应该就不需要了
       try {
         const { code, message, data } = await common.updateCount(params)
         if (code === 200) {

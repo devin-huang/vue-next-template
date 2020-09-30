@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>vue3 Composition Api 、Router</h1>
-    <section>
+    <section ref="sectionDom">
       <label>ref、计算属性</label>
       <input type="number" v-model="inputRef" />
       -- {{ double }} --
@@ -83,10 +83,13 @@ export default defineComponent({
     // 计算属性
     const double = computed(() => ++inputRef.value)
 
+    // 获取DOM节点
+    const sectionDom = ref(null)
+
     // Router
     // const router = useRouter()
 
-    return { inputRef, cloudy, person, only, double }
+    return { sectionDom, inputRef, cloudy, person, only, double }
   },
 })
 </script>

@@ -2,7 +2,7 @@
   <div class="vue-container">
     <LeftSideNav class="leftSide-nav" :menu="routes" />
     <section class="view-content">
-      <img alt="Vue logo" src="./assets/logo.png" />
+      <img class="vue3-image" alt="Vue logo" src="./assets/logo.png" />
       <router-view></router-view>
     </section>
   </div>
@@ -32,6 +32,9 @@ export default defineComponent({
 .vue-container {
   display: flex;
   height: 100vh;
+  .vue3-image {
+    width: 85px;
+  }
   .leftSide-nav {
     flex-basis: 200px;
   }
